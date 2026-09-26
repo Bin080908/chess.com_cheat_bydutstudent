@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <title>Chess Coach</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <h1>Chess Coach</h1>
+    <p class="sub">Luyện tập trên chess.com · Stockfish local</p>
+
+    <label class="row">
+      <span>Bật gợi ý</span>
+      <input id="enabled" type="checkbox" />
+    </label>
+
+    <label class="row">
+      <span>Chỉ khi tới lượt mình</span>
+      <input id="onlyMyTurn" type="checkbox" />
+    </label>
+
+    <label class="row">
+      <span>Hiện đánh giá</span>
+      <input id="showEval" type="checkbox" />
+    </label>
+
+    <label class="block">
+      <span>Độ sâu Stockfish: <b id="depthVal">16</b></span>
+      <input id="depth" type="range" min="8" max="20" step="1" />
+    </label>
+
+    <p class="hint">
+      Màu quân lấy từ hướng bàn: không lật = trắng, lật = đen. Overlay hiện khi tới lượt bạn.
+    </p>
+    <script src="popup.js"></script>
+  </body>
+</html>
